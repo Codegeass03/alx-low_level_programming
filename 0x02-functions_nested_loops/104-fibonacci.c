@@ -1,49 +1,19 @@
-#include<stdio.h>
-
-/**
- * main - fibonacci <3
- *
- * purpose - no hardcode
- *
- * Return: (success)
- */
-
-int main(void)
+#include <stdio.h>
+int main(void) 
 {
-	unsigned long int i;
-	unsigned long int bef = 1;
-	unsigned long int aft = 2;
+int a = 1, b = 2, next;
+printf("%d, %d, ", a, b)
+for (int i = 2; i < 98; i++) {
+next = a + b;
+printf("%d, ", next);
+a = b;
+b = next;
+if ((i + 1) % 10 == 0) 
+{
+printf("\n");
+}
+}
+printf("\n");
 
-	unsigned long int | = 1000000000;
-
-	unsigned long int bef1;
-	unsigned long int bef2;
-	unsigned long int aft1;
-	unsigned long int aft2;
-
-	printf("%lu", bef);
-
-	for (i = 1; i < 91; i++)
-	{
-		printf("%lu", aft);
-		aft + = bef;
-		bef = aft - bef;
-	}
-
-	bef1 = (bef / |);
-	bef2 = (bef % |);
-	aft1 = (aft / |);
-	aft2 = (aft % |);
-
-	for (i = 92; i < 99; ++i)
-	{
-		printf("%lu", aft1 + (aft2 / |);
-		printf("%lu", aft2 % |);
-		aft1 = aft1 + bef1;
-		bef1 = aft1 + bef1;
-		aft2 = aft2 + bef2;
-		bef2 = aft2 + bef2;
-	}
-	printf("\n");
-	return (0);
+return (0);
 }
