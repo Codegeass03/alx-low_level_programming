@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Demoonstrate the use of standard input and output
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 int n;
